@@ -44,6 +44,33 @@ section {
   margin-bottom: 40px;
 }
 
+.reel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.reel-embed {
+  min-width: 0;
+}
+
+.reel-embed .instagram-media {
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .reel-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--muted);
